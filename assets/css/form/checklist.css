@@ -1,0 +1,61 @@
+.checklist__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.checklist__item:hover {
+    background-color: #eee;
+}
+
+.checklist__details {
+    margin-left: 1em;
+}
+
+.checklist__title {
+    margin: 0;
+}
+
+.checklist__icon {
+    height: 35px;
+    width: 35px;
+    color: #888;
+    background-color: #ccc;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    flex-shrink: 0;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+.checklist__icon .modal__progress-icon-pending {
+    display: block;
+}
+
+.checklist__icon .modal__progress-icon-done {
+    display: none;
+}
+
+.checklist__icon::before {
+    content: '\f00c';
+}
+
+.checklist__icon--done {
+    background-color: #4ACFBC;
+    color: white;
+}
+
+.checklist__icon--done .modal__progress-icon-pending {
+    display: none;
+}
+
+.checklist__icon--done .modal__progress-icon-done {
+    display: block;
+}

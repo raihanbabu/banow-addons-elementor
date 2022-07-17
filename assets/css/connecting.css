@@ -1,0 +1,53 @@
+.lp-lineup {
+    height: 100vh;
+}
+
+@media (max-width: calc(1080px - 1px)) {
+    .lp-lineup {
+        text-align: center;
+    }
+}
+
+@media (max-width: calc(1080px - 1px)) {
+    .lp-lineup .brand-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.lp-lineup .lp-lineup__heading {
+    font-size: 90px;
+    margin-left: 30px;
+}
+
+@media (max-width: calc(768px - 1px)) {
+    .lp-lineup .lp-lineup__heading {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: calc(576px - 1px)) {
+    .lp-lineup .lp-lineup__heading {
+        font-size: 60px;
+    }
+}
+
+.lp-lineup__explosion {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+}
+
+.lp-lineup__artist-portrait {
+    position: absolute;
+    align-self: center;
+    transform: translate(-50%, -50%);
+    transition-property: all;
+    transition-duration: 0.4s;
+}

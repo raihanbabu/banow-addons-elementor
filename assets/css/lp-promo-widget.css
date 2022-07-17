@@ -1,0 +1,18 @@
+.lp-widget__container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    padding-bottom: 10px;
+}
+
+.lp-widget__container::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.lp-widget__container::-webkit-scrollbar-thumb {
+    background-color: #666666;
+    border-radius: 20px;
+}

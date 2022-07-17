@@ -1,0 +1,20 @@
+.lp-explosion {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+}
+
+.lp-explosion__artist-portrait {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    align-self: center;
+    transform: translate(-50%, -50%);
+    transition-property: all;
+    transition-duration: 0.4s;
+}

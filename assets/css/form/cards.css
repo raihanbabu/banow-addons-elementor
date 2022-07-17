@@ -1,0 +1,19 @@
+.card {
+    position: relative;
+    display: block;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    top: 0px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    transition-duration: 0.3s;
+    -moz-transition-property: all;
+}
+
+.card:hover {
+    top: -5px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #7A40FF;
+}

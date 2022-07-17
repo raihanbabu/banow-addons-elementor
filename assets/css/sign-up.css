@@ -1,0 +1,26 @@
+.sign-up {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up__input {
+    font-family: roobert, helvetica, arial;
+    height: 62px;
+    line-height: 62px;
+    vertical-align: middle;
+    border: 1px solid white;
+    background-color: transparent;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+@media (max-width: calc(576px - 1px)) {
+    .sign-up {
+        width: 100%;
+    }
+}

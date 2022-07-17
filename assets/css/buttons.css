@@ -1,0 +1,260 @@
+.btn {
+    background-color: #fff;
+    border-color: #7A40FF;
+    border-style: solid;
+    border-width: 2px;
+    color: #7A40FF;
+    cursor: pointer;
+    font-family: roobert, helvetica, arial;
+    font-size: 14px;
+    font-weight: 900;
+    height: 40px;
+    margin: 5px;
+    min-width: 120px;
+    outline: none;
+    padding: 0 2em;
+    position: relative;
+    text-align: center;
+    transition-duration: 0.3s;
+    transition-property: color, background-color, border-color;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    /**********************************************************\
+
+      WHITE
+
+  \**********************************************************/
+    /**********************************************************\
+
+      BLACK
+
+  \**********************************************************/
+    /**********************************************************\
+
+      MINT
+
+  \**********************************************************/
+    /**********************************************************\
+
+      DISABLED
+
+  \**********************************************************/
+    /**********************************************************\
+
+      LOADING
+
+  \**********************************************************/
+    /**********************************************************\
+
+      MISC
+
+  \**********************************************************/
+}
+
+.btn:hover {
+    background-color: #9e73ff;
+    border-color: #9e73ff;
+    color: #fff;
+    text-decoration: none !important;
+}
+
+.btn--cta {
+    background-color: #7A40FF;
+    border-color: #7A40FF;
+    color: #fff;
+}
+
+.btn--white {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn--white:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #fff;
+}
+
+.btn--black {
+    background-color: black;
+    color: #fff;
+    border-color: black;
+}
+
+.btn--black:hover {
+    background-color: #444;
+    border-color: #444;
+}
+
+.btn--mint {
+    border-color: #4ACFBC;
+    color: #4ACFBC;
+}
+
+.btn--mint:hover {
+    background-color: #72dacb;
+    color: #fff;
+    border-color: #72dacb;
+}
+
+.btn--mint-cta {
+    background-color: #4ACFBC;
+    border-color: #4ACFBC;
+    color: #fff;
+}
+
+.btn--mint-cta:hover {
+    background-color: #72dacb;
+    border-color: #72dacb;
+    color: #fff;
+}
+
+.btn[disabled],
+.btn--disabled {
+    background-color: #888;
+    border-color: #888;
+    color: #fff;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.btn[disabled]:hover,
+.btn--disabled:hover {
+    background-color: #888;
+    border-color: #888;
+    color: #fff;
+}
+
+.btn[loading] {
+    font-size: 0px;
+    pointer-events: none;
+}
+
+.btn[loading]::after {
+    content: '';
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-color: transparent currentColor currentColor currentColor;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 100px;
+    -webkit-animation: btn-loading 1s linear infinite;
+    -moz-animation: btn-loading 1s linear infinite;
+    animation: btn-loading 1s linear infinite;
+}
+
+.btn[loading]::before {
+    content: '\0000a0';
+    font-size: 14px;
+}
+
+.btn i {
+    margin-left: 0.5em;
+    margin-right: -0.5em;
+    transition-property: transform;
+    transition-duration: 0.3s;
+}
+
+@-moz-keyframes btn-loading {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes btn-loading {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes btn-loading {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/**********************************************************\
+
+    ICON BUTTON
+
+\**********************************************************/
+
+.icobtn {
+    height: 35px;
+    width: 35px;
+    font-size: 16px;
+    border-radius: 99px;
+    text-align: center;
+    background-color: #fff;
+    border: solid 1.5px #000;
+    color: #000;
+    flex-shrink: 0;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    margin: 5px;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.icobtn i {
+    position: relative;
+}
+
+.icobtn:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.icobtn--active {
+    color: #fff;
+    background-color: #000;
+}
+
+.svg-icobtn {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+
+/**********************************************************\
+
+    ICON BUTTON PIXEL CORRECTIONS
+
+\**********************************************************/
+
+.icobtn .fa-paper-plane {
+    bottom: 1px;
+    right: 1px;
+}
+
+/**********************************************************\
+
+    BUTTON WITH QUESTION MARK
+
+\**********************************************************/
+
+.btn__question {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 1px solid white;
+    border-radius: 100%;
+    background: #4FDFCB;
+    right: -8px;
+    top: -8px;
+    font-size: 8px;
+    justify-content: center;
+    line-height: 14px;
+    align-items: center;
+    display: flex;
+}

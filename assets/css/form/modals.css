@@ -1,0 +1,146 @@
+.modal-wrapper .modal {
+    position: fixed;
+    bottom: -1000px;
+    right: -1000px;
+    height: 1px;
+    width: 1px;
+}
+
+.modal-wrapper .modal__veil {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+}
+
+.modal-wrapper .modal__veil--show {
+    display: flex;
+}
+
+.modal-wrapper .modal__close-trigger {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.modal-wrapper .modal__panel {
+    background-color: white;
+    box-shadow: 0 0 50px black;
+    border-radius: 5px;
+    flex-direction: column;
+    overflow: hidden;
+    height: 700px;
+    width: 700px;
+    max-height: 90vh;
+    max-width: 90vw;
+    display: none;
+    z-index: 1;
+}
+
+.modal-wrapper .modal__panel--show {
+    display: flex;
+}
+
+.modal-wrapper .modal__panel h1.h1 {
+    font-size: 30px;
+}
+
+.modal-wrapper .modal--dialog .modal__panel {
+    height: auto;
+    width: 500px;
+}
+
+.modal-wrapper .modal__header {
+    padding: 20px 40px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.modal-wrapper .modal__body {
+    padding: 20px 40px;
+    overflow-x: auto;
+    flex-grow: 1;
+}
+
+.modal-wrapper .modal__footer {
+    background-color: #eee;
+    padding: 20px 40px;
+}
+
+.modal-wrapper .modal__progress {
+    height: 35px;
+    width: 35px;
+    background-color: #888;
+    color: #fff;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.modal-wrapper .modal__progress .modal__progress-icon-pending {
+    display: block;
+}
+
+.modal-wrapper .modal__progress .modal__progress-icon-done {
+    display: none;
+}
+
+.modal-wrapper .modal__progress--done {
+    background-color: #4ACFBC;
+}
+
+.modal-wrapper .modal__progress--done .modal__progress-icon-pending {
+    display: none;
+}
+
+.modal-wrapper .modal__progress--done .modal__progress-icon-done {
+    display: block;
+}
+
+.modal-wrapper .modal__loading {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 5px;
+}
+
+.modal-wrapper .modal__loading-throbber {
+    height: 40px;
+    width: 40px;
+    border-style: solid;
+    border-color: white white white transparent;
+    border-width: 4px;
+    -webkit-animation: modal-throbber-spin 4s linear infinite;
+    -moz-animation: modal-throbber-spin 4s linear infinite;
+    animation: modal-throbber-spin 4s linear infinite;
+}
+
+@-moz-keyframes modal-throbber-spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes modal-throbber-spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes modal-throbber-spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

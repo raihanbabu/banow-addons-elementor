@@ -1,0 +1,73 @@
+.lp-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+
+.lp-header-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    justify-content: center;
+}
+
+.lp-header-submenu {
+    display: flex;
+    flex-direction: column;
+    background-color: #7A40FF;
+    position: absolute;
+    pointer-events: none;
+    transition: 0.3s all;
+    top: -100%;
+    opacity: 0;
+}
+
+.lp-header-submenu a {
+    padding: 1em;
+}
+
+.lp-header-item:hover .lp-header-submenu {
+    top: 100%;
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.lp-header a {
+    color: inherit;
+}
+
+.lp-header a:visited {
+    color: inherit;
+}
+
+.lp-header .row {
+    height: 80px;
+}
+
+.lp-header .lp-header__create-profile {
+    display: none;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.lp-header-click-guard {
+    transition-property: height;
+    transition-delay: 0.2s;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.lp-header-item:hover .lp-header-click-guard {
+    height: 0;
+}

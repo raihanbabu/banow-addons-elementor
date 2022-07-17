@@ -1,0 +1,265 @@
+.hiw-step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 40px;
+    min-height: 200px;
+    opacity: 0;
+    top: 50px;
+    transition: all 0.6s ease-out;
+}
+
+.hiw-step h2 {
+    font-size: 45px;
+    margin: 0.2em 0;
+}
+
+.hiw-step p {
+    margin: 0.5em 0;
+}
+
+.hiw-step--reveal {
+    opacity: 1;
+    top: 0;
+}
+
+.hiw-content {
+    opacity: 0;
+    transition: all 1.4s ease-out 0.3s;
+    width: 100%;
+}
+
+.hiw-step--reveal .hiw-content {
+    opacity: 1;
+}
+
+.hiw-divider {
+    padding-bottom: 110px;
+    height: 0;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.6s ease-out;
+}
+
+.hiw-divider.hiw-step--reveal {
+    height: 110px;
+    padding-bottom: 0;
+}
+
+.hiw-divider::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 100%;
+    border-style: dashed;
+    border-width: 0 2px 0 0;
+    border-color: white;
+}
+
+.hiw-io {
+    position: fixed;
+    top: 0;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+}
+
+.hiwh-s1-profile {
+    max-width: 70% !important;
+}
+
+.hiwh-s2-search {
+    position: relative;
+    max-width: 90% !important;
+    left: 10%;
+    transition: all 1s ease-out 0.3s;
+}
+
+.hiw-step--reveal .hiwh-s2-search {
+    left: 0;
+}
+
+.hiwh-s2-phone {
+    position: absolute;
+    bottom: -10%;
+    left: -15%;
+    max-width: 25% !important;
+    ;
+    transition: all 1s ease-out 0.3s;
+}
+
+.hiw-step--reveal .hiwh-s2-phone {
+    left: -5%;
+}
+
+.hiwh-s3 h2,
+.hiwh-s3 p {
+    z-index: 1;
+}
+
+.hiwh-s3-artist-container {
+    position: absolute;
+    height: 0;
+    width: 0;
+    bottom: 40%;
+    opacity: 0.6;
+    transition: all 1s ease-out 0.3s;
+}
+
+.hiw-step--reveal .hiwh-s3-artist-container {
+    width: 130%;
+    height: calc(100% - 100px);
+    bottom: 0;
+}
+
+.hiwh-s3-artist {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.hiwh-s3-roster {
+    margin: 100px 0;
+    max-width: 30% !important;
+    ;
+    z-index: 1;
+}
+
+.hiwh-s4-calendar {
+    max-width: 100% !important;
+    ;
+}
+
+.hiwh-s5-dnd {
+    max-width: 100% !important;
+    ;
+}
+
+.hiwh-s6-chat {
+    max-width: 90% !important;
+    ;
+    position: relative;
+    right: -10%;
+    transition: all 1s ease-out 0.3s;
+}
+
+.hiw-step--reveal .hiwh-s6-chat {
+    right: 0;
+}
+
+.hiwh-s6-phone {
+    position: absolute;
+    bottom: -5%;
+    left: -15%;
+    max-width: 30% !important;
+    ;
+    transition: all 1s ease-out 0.3s;
+}
+
+.hiw-step--reveal .hiwh-s6-phone {
+    left: -5%;
+}
+
+.hiwh-s7-gig-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hiwh-s7-gig {
+    position: relative;
+    transition: all 1s ease-out 0.3s;
+    margin: 5px;
+    width: calc(50% - 20px);
+    bottom: -50px;
+    opacity: 0;
+}
+
+.hiw-step--reveal .hiwh-s7-gig {
+    bottom: 0;
+    opacity: 1;
+}
+
+.hiw-step--reveal .hiwh-s7-gig:nth-child(0) {
+    transition-delay: 0.0s;
+}
+
+.hiw-step--reveal .hiwh-s7-gig:nth-child(1) {
+    transition-delay: 0.2s;
+}
+
+.hiw-step--reveal .hiwh-s7-gig:nth-child(2) {
+    transition-delay: 0.4s;
+}
+
+.hiw-step--reveal .hiwh-s7-gig:nth-child(3) {
+    transition-delay: 0.6s;
+}
+
+.hiw-step--reveal .hiwh-s7-gig:nth-child(4) {
+    transition-delay: 0.8s;
+}
+
+.hiw-step--reveal .hiwh-s7-gig:nth-child(5) {
+    transition-delay: 1.0s;
+}
+
+.hiw-step--reveal .hiwh-s7-gig:nth-child(6) {
+    transition-delay: 1.2s;
+}
+
+.hiw-step--reveal .hiwh-s7-gig:nth-child(7) {
+    transition-delay: 1.4s;
+}
+
+.hiw-step--reveal .hiwh-s7-gig:nth-child(8) {
+    transition-delay: 1.6s;
+}
+
+.hiwh-s8-invoice {
+    margin-top: 1em;
+    max-width: 50% !important;
+}
+
+.hiwh-s9-phone {
+    position: relative;
+    width: 90%;
+    transition: all 1s ease-out 0.3s;
+}
+
+.hiw-step--reveal .hiwh-s9-phone {
+    right: 0;
+}
+
+.hiwh-s9-phone-container {
+    margin-top: 1em;
+}
+
+.hiwh-s9-phone-1 {
+    right: -50%;
+}
+
+.hiwh-s9-phone-2 {
+    z-index: 1;
+}
+
+.hiwh-s9-phone-3 {
+    right: 50%;
+}
+
+.hiwh-s10-team-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.hiwh-s10-portrait {
+    margin: 10px;
+    max-width: 40% !important;
+}

@@ -1,0 +1,59 @@
+.toggle {
+    display: none;
+}
+
+.toggle__label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    cursor: pointer;
+    margin: 10px 5px;
+}
+
+.toggle__track {
+    display: block;
+    height: 30px;
+    width: 60px;
+    background-color: #BFBFBF;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+
+.toggle__switch {
+    position: relative;
+    height: 26px;
+    width: 26px;
+    border-radius: 100px;
+    background-color: #000;
+    left: -15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition-property: left background-color;
+    transition-duration: 0.3s;
+}
+
+.toggle__switch::after {
+    content: 'N';
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input:checked+label .toggle__switch {
+    left: 15px;
+    background-color: #7A40FF;
+}
+
+input:checked+label .toggle__switch::after {
+    content: 'Y';
+}

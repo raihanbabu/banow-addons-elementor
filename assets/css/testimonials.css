@@ -1,0 +1,156 @@
+.lp-they-say {
+    position: relative;
+    margin: 100px 0;
+}
+
+.lp-they-say__sound-wave {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.lp-they-say__callout-tick {
+    height: 0;
+    width: 0;
+    border-width: 20px;
+    border-style: solid;
+    border-color: #7A40FF transparent transparent #7A40FF;
+    position: absolute;
+    bottom: -40px;
+    left: 15%;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.lp-they-say__callout-tick::after {
+    content: '';
+    height: 0;
+    width: 0;
+    border-width: 20px;
+    border-style: solid;
+    border-color: #fff transparent transparent #fff;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+}
+
+.lp-they-say__callout-tick.middle {
+    left: 45%;
+}
+
+.lp-they-say__testimonial-container {
+    position: relative;
+    background-color: #fff;
+    color: #000;
+    margin-bottom: 50px;
+    height: 220px;
+}
+
+@media (max-width: calc(1400px - 1px)) {
+    .lp-they-say__testimonial-container {
+        height: 270px;
+    }
+}
+
+.lp-they-say__testimonial {
+    padding: 25px;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-property: opacity;
+}
+
+.lp-they-say__testimonial--show {
+    opacity: 1;
+}
+
+.lp-they-say__testimonial-mobile {
+    box-sizing: border-box;
+    padding: 25px;
+    font-size: 23px;
+    background-color: #fff;
+    color: #000;
+    position: relative;
+    margin-bottom: 50px;
+    height: 215px;
+}
+
+@media (max-width: calc(768px - 1px)) {
+    .lp-they-say__testimonial-mobile {
+        height: 290px;
+    }
+}
+
+@media (max-width: calc(576px - 1px)) {
+    .lp-they-say__testimonial-mobile {
+        font-size: 20px;
+        height: 335px;
+    }
+}
+
+.lp-they-say__by-line {
+    margin: 0 10px;
+}
+
+.lp-they-say__by-line-detail {
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.lp-they-say__by-line-subtitle {
+    opacity: 0.5;
+}
+
+.lp-they-say__by-line-portrait-mobile {
+    margin-right: 20px;
+    border-radius: 100px;
+}
+
+.lp-they-say__by-line img,
+.lp-they-say__by-line-portrait-mobile {
+    height: 70px;
+    width: 70px;
+    flex-shrink: 0;
+    border: 1px solid #7A40FF;
+    border-radius: 100px;
+}
+
+.lp-they-say .lp-they-say__mobile .slider__next,
+.lp-they-say .lp-they-say__mobile .slider__prev {
+    padding: 20px;
+}
+
+.lp-they-say .lp-they-say__mobile .slider__next img,
+.lp-they-say .lp-they-say__mobile .slider__prev img {
+    height: 20px;
+    width: 20px;
+    opacity: 0.5;
+}
+
+.lp-they-say .lp-they-say__mobile .slider__pips {
+    width: 40%;
+}
+
+.lp-they-say .lp-they-say__mobile .slider__pip {
+    height: 8px;
+    width: 8px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.lp-they-say .lp-they-say__mobile .slider__pip--active {
+    height: 15px;
+    width: 15px;
+}
+
+.lp-they-say .lp-they-say__mobile h2 {
+    font-size: 42px;
+    text-align: center;
+}
+
+.lp-they-say .lp-they-say__mobile h3 {
+    text-align: center;
+}

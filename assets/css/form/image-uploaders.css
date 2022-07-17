@@ -1,0 +1,65 @@
+.image-uploader {
+    display: none;
+}
+
+.image-uploader__container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 5px;
+}
+
+.image-uploader__label {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    width: 140px;
+    height: 120px;
+    flex-shrink: 0;
+}
+
+.image-uploader__label .fa {
+    font-size: 50px;
+}
+
+.image-uploader__image-container {
+    height: 100%;
+    width: 140px;
+    height: 120px;
+    position: relative;
+    margin: 5px;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+
+.image-uploader__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.image-uploader__remove {
+    position: absolute;
+    top: 0;
+    right: 6px;
+    color: white;
+    text-shadow: 0 0 3px black;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.image-uploader__image-progress {
+    position: absolute;
+    font-size: 40px;
+    top: calc(50% - 20px);
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 3px black;
+    opacity: 0.8;
+}

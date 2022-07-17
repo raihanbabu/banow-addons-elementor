@@ -1,0 +1,27 @@
+.toast {
+    position: fixed;
+    text-align: center;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0;
+    bottom: -100px;
+    transition-property: all;
+    transition-duration: 0.8s;
+}
+
+.toast__content {
+    display: inline-block;
+    background-color: #222;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 100px;
+}
+
+.toast--show {
+    opacity: 0.9;
+    bottom: 50px;
+}

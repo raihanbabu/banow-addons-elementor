@@ -1,0 +1,35 @@
+.lp-fsr {
+    text-align: center;
+    font-weight: 600;
+    font-size: 72px;
+}
+
+@media (max-width: calc(1080px - 1px)) {
+    .lp-fsr {
+        font-size: 6vw;
+    }
+}
+
+.lp-fsr__number {
+    color: #7A40FF;
+    font-weight: bold;
+}
+
+.lp-fsr__star {
+    height: 40px;
+    width: 40px;
+}
+
+@media screen and (max-width: 767px) {
+    #lp-fsr {
+        margin: 10px;
+    }
+    #lp-fsr .h1.ta-l {
+        font-size: 28px;
+        line-height: initial;
+    }
+    #lp-fsr .fd-r {
+        display: block;
+        text-align: right;
+    }
+}
